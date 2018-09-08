@@ -18,7 +18,7 @@ I followed the instructions posted online to complete the assignment.
 Did you have any problems or issues? How did you solve these? Did you post about these to the class repo issue tracker? Did you receive any useful feedback from your classmates?
 
 ## Answer
-I did have issues with this first assignment, which is why I am turning it in late. I was having an issue getting my GitHub Repo to sync. This became very frustrating and I had to step away from my computer for awhile. I did not post about these issues online, I went back through the instructions posted at a later time, once I had cleared my mind, and was able to fix the issue I was having.
+I did have issues with this first assignment, which is why I am turning it in late. I was having an issue getting my GitHub Repo to sync and then upload to GitHub. This became very frustrating and I had to step away from my computer for awhile. I did not post about these issues online, I went back through the instructions posted at a later time, once I had cleared my mind, and was able to fix the issue I was having.
 
 # Question 4
 Is there anything in particular you learned that you would like to discuss further?
