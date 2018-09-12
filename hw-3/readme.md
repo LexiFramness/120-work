@@ -1,5 +1,7 @@
-# Empty p5 sketch.
+Alexis Framness
 
-Please replace contents of this file with appropriate readme information after finishing your p5 sketch.
+[Hello Work Homework : (https://lexiframness.github.io/120-work/hw-3)]
 
-Current p5 version -> 0.7.1
+This week I learned some of the basics of p5.
+
+I didn't have any issues completing the assignment this week.
