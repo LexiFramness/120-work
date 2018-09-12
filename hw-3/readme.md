@@ -1,6 +1,8 @@
 Alexis Framness
 
-[Hello Work Homework : (https://lexiframness.github.io/120-work/hw-3)]
+# Week 3 Homework
+
+[Hello Work Homework : (https://lexiframness.github.io/120-work/hw-3)
 
 This week I learned some of the basics of p5.
 
