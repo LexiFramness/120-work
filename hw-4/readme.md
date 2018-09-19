@@ -1,5 +1,5 @@
-# Empty p5 sketch.
+Alexis Framness
 
-Please replace contents of this file with appropriate readme information after finishing your p5 sketch.
+# Week 4 Homework
 
-Current p5 version -> 0.7.1
+[Sketch](https://lexiframness.github.io/120-work/hw-4)
