@@ -12,5 +12,15 @@ function draw() {
 //sandbox for mimi
 push();
 
-//center
+//center canvas
 translate (400,400);
+// creat head sandbox
+push();
+//deleting stroke
+  noStroke();
+//color of circle
+  fill('white');
+//creating oval
+  rect(-200, -200, 250, 250, 150, 150, 100, 100);
+  //end of head sandbox
+  pop()
