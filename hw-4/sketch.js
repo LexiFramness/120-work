@@ -6,5 +6,5 @@ function setup() {
 }
 function draw(){
   //background color
-  background(300)
+  background(3000)
 }
