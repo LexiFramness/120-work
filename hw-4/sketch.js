@@ -145,4 +145,85 @@ push ();
         //end of left nostrile  sandbox
         pop()
 
+        //create right paw
+        push ();
+        //deleting Stroke
+        noStroke ();
+        //color of paw
+        fill ('white');
+        //creating oval
+        ellipse (325, 527, 100,35);
+        //end of right paw
+        pop()
+
+        //create left paw
+        push ();
+        //deleting Stroke
+        noStroke ();
+        //color of paw
+        fill ('white');
+        //creating oval
+        ellipse (475, 527, 100,35);
+        //end of left paw
+        pop()
+
+        //create right paw nail one
+        push ();
+        //deleting Stroke
+        noStroke ();
+        //color of nail
+        fill ('black');
+        ellipse (305, 537, 6, 8);
+        //end of nail one
+        pop()
+
+        //create right paw nail two
+        push ();
+        //deleting Stroke
+        noStroke ();
+        //color of nail
+        fill ('black');
+        ellipse (325, 537, 6, 8);
+        //end of nail two
+        pop()
+
+        //create right paw nail three
+        push ();
+        //deleting Stroke
+        noStroke ();
+        //color of nail
+        fill ('black');
+        ellipse (345, 537, 6, 8);
+        //end of nail three
+        pop()
+
+        //create left paw nail one
+        push ();
+        //deleting Stroke
+        noStroke ();
+        //color of nail
+        fill ('black');
+        ellipse (475, 537, 6, 8);
+        //end of nail one
+        pop()
+
+        //create left paw nail two
+        push ();
+        //deleting Stroke
+        noStroke ();
+        //color of nail
+        fill ('black');
+        ellipse (455, 537, 6, 8);
+        //end of nail two
+        pop()
+
+        //create left paw nail three
+        push ();
+        //deleting Stroke
+        noStroke ();
+        //color of nail
+        fill ('black');
+        ellipse (495, 537, 6, 8);
+        //end of nail three
+        pop()
 }
