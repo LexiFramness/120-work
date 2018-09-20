@@ -97,7 +97,7 @@ push ();
         //color of rectanglt
         fill ('pink');
         //creating rectangle
-        rect(378, 430,45, 45);
+        rect (378, 430,45, 45);
         //end of tongue
         pop()
 
@@ -108,7 +108,7 @@ push ();
         //color of tongue end
         fill ('pink');
         //creating circle
-        ellipse(400, 470, 47,46);
+        ellipse (400, 470, 47,46);
         //end of tongue end
         pop()
 
