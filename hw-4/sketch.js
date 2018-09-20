@@ -54,7 +54,7 @@ push ();
     fill ('black');
   //creating oval
     ellipse(355, 360, 25, 25);
-    //end of head sandbox
+    //end of lefteye sandbox
     pop()
 
     // create lefteye shine sandbox
@@ -65,7 +65,7 @@ push ();
       fill ('white');
     //creating oval
       ellipse(353, 355, 5, 5);
-      //end of head sandbox
+      //end of lefteye shine sandbox
       pop()
 
     // create righteye sandbox
@@ -76,7 +76,7 @@ push ();
       fill ('black');
     //creating oval
       ellipse(440, 360, 25, 25);
-      //end of head sandbox
+      //end of righteye sandbox
       pop()
 
       // create righteye shine sandbox
@@ -87,8 +87,30 @@ push ();
         fill ('white');
       //creating oval
         ellipse(437, 355, 5, 5);
-        //end of head sandbox
+        //end of righteye shine sandbox
         pop()
+
+//create tongue
+push();
+//deleting Stroke
+noStroke();
+//color of rectanglt
+fill ('pink');
+//creating rectangle
+rect(378, 430,45, 45);
+//end of tongue
+pop()
+
+//creating tongue end
+push();
+//deleting Stroke
+noStroke();
+//color of tongue end
+fill ('pink');
+//creating circle
+ellipse(400, 470, 47,46);
+//end of tongue end
+pop()
 
 //create nose sandbox
 push ();
@@ -100,4 +122,27 @@ fill ('gray');
 ellipse (400, 430, 50,50);
 //end of nose sandbox
 pop()
+
+// create right nostrile sandbox
+push ();
+//deleting stroke
+  noStroke ();
+//color of circle
+  fill ('black');
+//creating oval
+  ellipse(394, 425, 13, 11);
+  //end of right nostrile sandbox
+  pop()
+
+  // create left nostrile sandbox
+  push ();
+  //deleting stroke
+    noStroke ();
+  //color of circle
+    fill ('black');
+  //creating oval
+    ellipse(410, 425, 13, 11);
+    //end of left nostrile  sandbox
+    pop()
+
 }
