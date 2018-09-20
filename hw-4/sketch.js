@@ -90,59 +90,59 @@ push ();
         //end of righteye shine sandbox
         pop()
 
-//create tongue
-push();
-//deleting Stroke
-noStroke();
-//color of rectanglt
-fill ('pink');
-//creating rectangle
-rect(378, 430,45, 45);
-//end of tongue
-pop()
+        //create tongue
+        push();
+        //deleting Stroke
+        noStroke();
+        //color of rectanglt
+        fill ('pink');
+        //creating rectangle
+        rect(378, 430,45, 45);
+        //end of tongue
+        pop()
 
-//creating tongue end
-push();
-//deleting Stroke
-noStroke();
-//color of tongue end
-fill ('pink');
-//creating circle
-ellipse(400, 470, 47,46);
-//end of tongue end
-pop()
+        //creating tongue end
+        push();
+        //deleting Stroke
+        noStroke();
+        //color of tongue end
+        fill ('pink');
+        //creating circle
+        ellipse(400, 470, 47,46);
+        //end of tongue end
+        pop()
 
-//create nose sandbox
-push ();
-//deleting Stroke
-noStroke();
-//color
-fill ('gray');
-//creating oval
-ellipse (400, 430, 50,50);
-//end of nose sandbox
-pop()
+        //create nose sandbox
+        push ();
+        //deleting Stroke
+        noStroke();
+        //color
+        fill ('gray');
+        //creating oval
+        ellipse (400, 430, 50,50);
+        //end of nose sandbox
+        pop()
 
-// create right nostrile sandbox
-push ();
-//deleting stroke
-  noStroke ();
-//color of circle
-  fill ('black');
-//creating oval
-  ellipse(394, 425, 13, 11);
-  //end of right nostrile sandbox
-  pop()
+        // create right nostrile sandbox
+        push ();
+        //deleting stroke
+        noStroke ();
+        //color of circle
+        fill ('black');
+        //creating oval
+        ellipse(394, 425, 13, 11);
+        //end of right nostrile sandbox
+        pop()
 
-  // create left nostrile sandbox
-  push ();
-  //deleting stroke
-    noStroke ();
-  //color of circle
-    fill ('black');
-  //creating oval
-    ellipse(410, 425, 13, 11);
-    //end of left nostrile  sandbox
-    pop()
+        // create left nostrile sandbox
+        push ();
+        //deleting stroke
+        noStroke ();
+        //color of circle
+        fill ('black');
+        //creating oval
+        ellipse(410, 425, 13, 11);
+        //end of left nostrile  sandbox
+        pop()
 
 }
