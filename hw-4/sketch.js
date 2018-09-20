@@ -2,25 +2,102 @@
 //mimi
 
 function setup() {
-  createCanvas (800,800);
+  createCanvas (1000,800);
 }
 function draw() {
   //background color
   background ('#c8f1f9')
-}
 
 //sandbox for mimi
-push();
+push ();
 
 //center canvas
-translate (400,400);
-// creat head sandbox
-push();
+translate (100,-100);
+// create head sandbox
+push ();
 //deleting stroke
-  noStroke();
+  noStroke ();
 //color of circle
-  fill('white');
+  fill ('white');
 //creating oval
-  rect(-200, -200, 250, 250, 150, 150, 100, 100);
+  ellipse(400, 400, 250, 250);
   //end of head sandbox
   pop()
+
+  //create left ear
+  push ();
+//deleting stroke
+  noStroke ();
+  //color
+  fill ('black');
+  //create triangle
+  triangle(280, 360, 310, 210, 370, 277);
+  //end left ear
+  pop()
+
+  //create right ear
+  push ();
+//deleting stroke
+  noStroke ();
+  //color
+  fill ('brown');
+  //create triangle
+  triangle(517, 350, 450, 286, 525, 237);
+  //end right ear
+  pop()
+
+  // create lefteye sandbox
+  push ();
+  //deleting stroke
+    noStroke ();
+  //color of circle
+    fill ('black');
+  //creating oval
+    ellipse(355, 360, 25, 25);
+    //end of head sandbox
+    pop()
+
+    // create lefteye shine sandbox
+    push ();
+    //deleting stroke
+      noStroke ();
+    //color of circle
+      fill ('white');
+    //creating oval
+      ellipse(353, 355, 5, 5);
+      //end of head sandbox
+      pop()
+
+    // create righteye sandbox
+    push ();
+    //deleting stroke
+      noStroke ();
+    //color of circle
+      fill ('black');
+    //creating oval
+      ellipse(440, 360, 25, 25);
+      //end of head sandbox
+      pop()
+
+      // create righteye shine sandbox
+      push ();
+      //deleting stroke
+        noStroke ();
+      //color of circle
+        fill ('white');
+      //creating oval
+        ellipse(437, 355, 5, 5);
+        //end of head sandbox
+        pop()
+
+//create nose sandbox
+push ();
+//deleting Stroke
+noStroke();
+//color
+fill ('gray');
+//creating oval
+ellipse (400, 430, 50,50);
+//end of nose sandbox
+pop()
+}
