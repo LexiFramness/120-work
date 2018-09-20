@@ -91,7 +91,7 @@ push ();
         pop()
 
         //create tongue
-        push();
+        push ();
         //deleting Stroke
         noStroke();
         //color of rectanglt
@@ -99,6 +99,17 @@ push ();
         //creating rectangle
         rect(378, 430,45, 45);
         //end of tongue
+        pop()
+
+        //creating tongue end
+        push ();
+        //deleting Stroke
+        noStroke();
+        //color of tongue end
+        fill ('pink');
+        //creating circle
+        ellipse(400, 470, 47,46);
+        //end of tongue end
         pop()
 
         //create nose sandbox
@@ -132,17 +143,6 @@ push ();
         //creating oval
         ellipse(410, 425, 13, 11);
         //end of left nostrile  sandbox
-        pop()
-
-        //creating tongue end
-        push();
-        //deleting Stroke
-        noStroke();
-        //color of tongue end
-        fill ('pink');
-        //creating circle
-        ellipse(400, 470, 47,46);
-        //end of tongue end
         pop()
 
 }
