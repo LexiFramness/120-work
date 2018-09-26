@@ -6,7 +6,7 @@ Date:09/26/18
 [Animation Sketch](https://lexiframness.github.io/120-work/hw-4)
 
 
-I decided to do a portrait of my dog, Mimi, since she is basically a monster.
+I decided to try to animate my portrait of my dog, Mimi.
 
 In order to complete this assignment, I need to be able to understand and use multiple different input parameters.
 
