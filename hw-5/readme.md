@@ -3,7 +3,7 @@ Date:09/26/18
 
 # **Week 5 Assignment:** Portrait or Monster Drawing
 
-[Animation Sketch](https://lexiframness.github.io/120-work/hw-4)
+[Animation Sketch](https://lexiframness.github.io/120-work/hw-5)
 
 
 I decided to try to animate my portrait of my dog, Mimi.
