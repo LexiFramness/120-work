@@ -1,18 +1,39 @@
 //Alexis Framness
-//mimi
+//mimi - animated
+
+let myVar;
+
+myVar = 500;
+
+let myVar2;
+
+myVar2 = 650;
 
 function setup() {
-  createCanvas (1000,800);
+  createCanvas (windowWidth, windowHeight);
   //background color
   background ('#c8f1f9')
+  frameRate(60);
+
 }
+
 function draw() {
+  //background color
+  background ('#c8f1f9')
+  noCursor();
+  textSize(20);
+    noStroke();
+    fill('black');
+    text("mouseX: " + floor(mouseX), myVar, 40 );
+    text("mouseY: " + floor(mouseY), myVar, 80 );
+    text("width: " + windowWidth, myVar2, 40);
+    text("height: " + windowHeight, myVar2, 80);
 
 //sandbox for mimi
 push ();
 
 //center canvas
-translate (100,-100);
+translate (mouseX,mouseY);
 // create head sandbox
 push ();
 //deleting stroke
