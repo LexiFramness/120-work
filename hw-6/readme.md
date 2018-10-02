@@ -21,10 +21,10 @@ In order to complete this assignment, I needed to be able to understand and use 
 - sqrt()
 - map()
 - random()
-- +
-- -
-- *
-- %
+- "+
+- "-"
+- "*
+- "%"
 
 
 # Problems
