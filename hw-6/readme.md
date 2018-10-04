@@ -1,5 +1,5 @@
 Alexis Framness
-Date:10/02/18
+Date:10/03/18
 
 # **Week 6 Assignment:** Algorithmic Sketch
 
@@ -21,11 +21,11 @@ In order to complete this assignment, I needed to be able to understand and use 
 - sqrt()
 - map()
 - random()
-- "+
+- "+"
 - "-"
 - "*
 - "%"
 
 
 # Problems
-This was just overall challenging, math truly is the absolute worst.
+This was just overall challenging, math truly is the absolute worst. I wanted to make the two circles on either side of the circle created by the cursor rotate around the center circle, but couldn't figure out how to make that happen, so I decided to create some fixed spinning rectangles to spice things up a little.
