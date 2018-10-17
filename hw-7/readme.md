@@ -12,4 +12,4 @@ The original code created a ball that moves across a canvas. The first few lines
 
 ## How did you alter the sketch?
 
-The first thing I did was change the canvas height from 400 to windowHeight. This way, the canvas just fills the users window completely. I also decided to set a frame rate of 17. Next I change the color of the background, along with the color of the ball. I also changed the spacing between the balls once the mouse has been clicked.
+The first thing I did was change the canvas height from 400 to windowHeight. This way, the canvas just fills the users window completely. I also decided to set a frame rate of 17. Next I change the color of the background, along with the color of the ball I decided I didn't want the stroke of the ball so I removed that. I also changed the spacing between the balls once the mouse has been clicked. I also decided to make the ball smaller in size than the original had done.

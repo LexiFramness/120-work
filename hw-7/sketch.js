@@ -1,9 +1,9 @@
 
 
 let ball = {};
-ball.width = 40;
-ball.x = 10;
-ball.y = 10;
+ball.width = 20;
+ball.x = 5;
+ball.y = 5;
 ball.delta_x = 1;
 ball.delta_y = 1;
 ball.scale_x = 1;
@@ -30,7 +30,9 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
+
     fill('rgb(70,99,256)'); // changed fill from 255
+    noStroke() //removed stroke
     ellipse(ball.x, ball.y, ball.width, ball.width);
 }
 
