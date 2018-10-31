@@ -3,7 +3,7 @@ Date:10/30/18
 
 # **Week 10 Assignment:** Functions and Arrays
 
-[Mimi Sketch](https://lexiframness.github.io/120-work/hw-10)
+[Mimi](https://lexiframness.github.io/120-work/hw-10)
 
 
 I decided to take the portrait of my dog, Mimi, and combined it with the ball moving across the screen. I moved the original code of these two projects and made them into their own functions in my new assignment. I also added an array where three rectangles randomly changing colors, move down the right side of the screen.
