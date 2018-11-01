@@ -50,31 +50,30 @@ function drawBall(){
   }
 
 
-  fill('yellow');
+  fill('yellow');//make ball yellow in color
   noStroke() //removed stroke
-  ellipse(ball.x, ball.y, ball.width, ball.width);
+  ellipse(ball.x, ball.y, ball.width, ball.width);//size pulled from variables above
 }
-
 
 //draw mimi
 function drawMimi(){
-push ();
-//center canvas
-translate (100,-100);
-// create head sandbox
-push ();
-//deleting stroke
+  push ();
+  //center canvas
+  translate (100,-100);
+  // create head sandbox
+  push ();
+  //deleting stroke
   noStroke ();
-//color of circle
+  //color of circle
   fill ('white');
-//creating oval
+  //creating oval
   ellipse(400, 400, 250, 250);
   //end of head sandbox
   pop()
 
   //create left ear
   push ();
-//deleting stroke
+  //deleting stroke
   noStroke ();
   //color
   fill ('black');
@@ -85,7 +84,7 @@ push ();
 
   //create right ear
   push ();
-//deleting stroke
+  //deleting stroke
   noStroke ();
   //color
   fill ('brown');
