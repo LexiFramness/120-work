@@ -23,7 +23,7 @@ function setup() {
 function draw() {
     background(0);
     // call the ball's methods
-    ball.frame()
+    ball.frame();
 
   }
 
