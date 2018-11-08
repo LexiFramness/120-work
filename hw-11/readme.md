@@ -13,5 +13,5 @@ I began by creating a canvas, then created a ball which I assigned a class. I th
 # Problems
 I did not run into any problems this week.
 
-#Screenshot of workflow.
+# Screenshot of workflow.
 ![screenshot](./images/Workflow.png)
