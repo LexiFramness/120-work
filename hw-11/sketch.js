@@ -3,10 +3,7 @@
 
 
 // create a variables for balls
-let ball;
-let balls = [];
-let num_of_balls = 25;
-
+let ball = [];
 
 function setup() {
     // createCanvas the fills window
@@ -15,15 +12,17 @@ function setup() {
     // create a new ball object of class type "Ball"
     ball = new Ball (random(windowWidth), random(windowHeight), 50,color(random(255), random(255), random(255)));
 
-    for (let i = 0; i < num_of_balls; i++) {
-        balls.push( new Ball() );
+    for (let i = 0; i < 33; i++) {
+        ball[i] = new Ball(random(windowWidth), random(windowHeight), 50,color(random(255), random(255), random(255))) ;
     }
 }
 
 function draw() {
     background(0);
     // call the ball's methods
-    ball.frame();
+    for( i = 0; i < 33; i++ ){
+    ball[i].frame();
+    }
 
   }
 
@@ -38,7 +37,7 @@ class Ball {
         this.deltaX = random(-4, 4);
         this.deltaY = random(-4, 4);
     }
-
+//create frame containing methods for looping in Draw
     frame() {
       this.display();
       this.move();
@@ -56,7 +55,7 @@ class Ball {
         ellipse(0, 0, this.size);
         pop();
     }
-
+//moves ball across screen
     move() {
         this.posX += this.deltaX;
         this.posY += this.deltaY;

@@ -9,4 +9,4 @@ Date:11/6/18
 I decided to create a canvas in which there are multiple balls generated, each with their own random color, bouncing around the screen.
 
 # Problems
-I did not run into any problems this week, that I wasn't able to solve myself, just by rereading through my code, and breaking down where the code was broken.
+I did not run into any problems this week.
