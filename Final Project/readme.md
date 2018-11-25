@@ -1,7 +1,7 @@
 Alexis Framness
 Date:11/23/18
 
-# **Final Project:** Final Project Proposal
+# **Final Project:** Proposal
 
 ## Basic Idea
 
