@@ -6,8 +6,8 @@
 let ball = [];
 
 function preload() {
-  soundFormats('mp3', 'ogg');
-  mySound = loadSound('./assets/pong.mp3');
+  soundFormats('mp3',);
+  mySound = loadSound('/assets/pong.mp3');
 }
 
 function setup() {
