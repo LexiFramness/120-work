@@ -14,4 +14,4 @@ I overheard my boyfriend and some of his friends talking about pong the other da
 I plan to spend 1-2 hours a day working on the project until it is completed.
 
 # Current Work
-I have already started looking into how to add music to a project.
+I have already started looking into how to add music/sound to a project.
