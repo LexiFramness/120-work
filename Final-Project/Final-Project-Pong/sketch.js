@@ -14,7 +14,7 @@ function setup() {
     }
 function resetSketch(){
   window.alert("Use Right and Left Arrow keys to move paddle")
-  button createButton("reset");
+  var button = createButton("reset");
   button.mousePressed(resetSketch);
 }
 
