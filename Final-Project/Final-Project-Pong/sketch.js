@@ -1,7 +1,7 @@
 //Alexis Framness
 // Final Project
 var pongSound
-
+// pre load sound for game
 function preload(){
     pongSound = loadSound("assets/sound/beep.mp3");
 }
@@ -55,7 +55,7 @@ function setup() {
       // Draw score
       fill(0, 255, 255);
       textSize(35);
-    	text("Score: " + score, 10, 25);
+    	text("Score: " + score, 20, 30);
     }
       // controls movement of the paddle across the screen
     function keyPressed() {
