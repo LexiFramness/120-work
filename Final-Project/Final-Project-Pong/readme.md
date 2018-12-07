@@ -16,6 +16,6 @@ The first real error I ran into with the project was forgetting to add the p5 so
 # Current Work
 I have already started looking into how to add music/sound to a project.
 
-#Live Site
+# Live Site
 
 [Final Project](/Final-Project-Pong/index.html)
