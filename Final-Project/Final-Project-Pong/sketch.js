@@ -9,6 +9,7 @@ function preload(){
 function setup() {
       // createCanvas the fills window
       createCanvas(windowWidth, windowHeight);
+      window.alert("Use Right and Left Arrow keys to move paddle")
     }
 
     function draw() {
