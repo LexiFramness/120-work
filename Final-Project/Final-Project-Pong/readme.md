@@ -11,6 +11,8 @@ I want to try and create a basic game of pong, with a working counter showing li
 ## Problems
 The first real error I ran into with the project was forgetting to add the p5 sound library to my index.html file. so I couldn't get pass the preload function. Once I figured out that mistake I was able to move forward with the project. Creating a working life or "lives" counter was really hard to do. I also decided to ad a reset button so the user could restart the game without refreshing the webpage.
 
+For the life of me, I could not get the AI paddle to work properly with returning the ball towards the player. In the end, I had to do a work around, which gives the appearance of the AI paddle working properly, but in reality the AI paddle is broken.
+
 # End Product
 I was able to get fairly close to what I originally set out to achieve, In order to properly build my site I had to first learn how to properly use the preload function, this allowed me to load up the sound files before the game started, ensuring that the first time the ball hits the paddle, the sound plays properly.  I used the Coding Train on youtube to refresh myself and learn new things required to complete this assignment.
 

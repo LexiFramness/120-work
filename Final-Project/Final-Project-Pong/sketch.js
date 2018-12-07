@@ -1,13 +1,15 @@
 //Alexis Framness
 // Final Project
 var pongSound
+var aipongSound
 var lifes = 3
 var started = false;
 var score = 0;
 //preload sound for game & show user instructions
 function preload(){
     pongSound = loadSound("assets/sound/beep.mp3");
-    //window.alert("Use the Right and Left Arrow keys to move paddle");
+    aipongSound = loadSound("assets/sound/AIbeep.mp3");
+    window.alert('Use the Right and Left Arrow keys to move your paddle(Blue). To restart click "Start Over"');
 }
 function resetSketch(){
   button = createButton('Start Over');
@@ -24,12 +26,10 @@ function setup() {
 }
 function draw() {
       background('rgb(120, 110, 119)');
-
-      // Draw ball
-      fill(31, 173, 215);
-      noStroke();
-      ellipse(xBall, yBall, diameter, diameter);
-
+      //call ball
+      this.Ball()
+      this.Paddle()
+      this.Paddle2()
 
       // Ball bounces off walls
     	xBall += xBallChange;
@@ -45,10 +45,13 @@ function draw() {
       }
       if (yBall <= 20){
         lifes = lifes +1;
+        aipongSound.play();
       }
 
       if (lifes <= 0){
+        window.alert('GAME OVER, Better luck next time');
         resetSketch();
+
       }
       // Check for collision with paddle
       if ((xBall > xPaddle &&
@@ -75,15 +78,6 @@ function draw() {
         yPaddle2 = windowHeight - 648;
         started = true;
       }
-
-      // Draw paddle
-      fill('blue');
-      noStroke();
-      rect(xPaddle, yPaddle, paddleWidth, paddleHeight);
-      //Draw paddle2 (AI Paddle)
-      fill('green');
-      noStroke();
-      rect(xBall, 0 ,paddleWidth2,paddleHeight2)
       //Draw live counter
       fill(0,255, 255);
       textSize(35);
