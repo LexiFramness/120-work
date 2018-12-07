@@ -30,6 +30,7 @@ function draw() {
       noStroke();
       ellipse(xBall, yBall, diameter, diameter);
 
+
       // Ball bounces off walls
     	xBall += xBallChange;
     	yBall += yBallChange;
@@ -41,8 +42,12 @@ function draw() {
           yBall > windowHeight - 80) {
         yBallChange *= -1;
         lifes = lifes -1;
-    	}
-      if (lifes < 0){
+      }
+      if (yBall <= 20){
+        lifes = lifes +1;
+      }
+
+      if (lifes <= 0){
         resetSketch();
       }
       // Check for collision with paddle
@@ -54,21 +59,23 @@ function draw() {
         score++;
         pongSound.play();
       }
-      // Check for collision with AI paddle
+      //collision with AL paddle
       if ((xBall < xPaddle2 &&
           xBall > xPaddle2 + paddleWidth2) &&
-          (yBall - (diameter/2) <= yPaddle2)) {
+          (yBall + (diameter/2) >= yPaddle2)) {
         xBallChange *= -1;
         yBallChange *= -1;
         pongSound.play();
       }
-
       // Update the paddle location on screen
       if (!started) {
         xPaddle = windowWidth / 2;
         yPaddle = windowHeight - 90;
+        xPaddle2 = windowWidth / 2;
+        yPaddle2 = windowHeight - 648;
         started = true;
       }
+
       // Draw paddle
       fill('blue');
       noStroke();
