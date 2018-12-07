@@ -1,19 +1,34 @@
 //Alexis Framness
 // Final Project
 var pongSound
-// pre load sound for game
+var lifes = 3
+var started = false;
+var score = 0;
+//preload sound for game & show user instructions
 function preload(){
     pongSound = loadSound("assets/sound/beep.mp3");
+    //window.alert("Use the Right and Left Arrow keys to move paddle");
 }
-
+function resetSketch(){
+  button = createButton('Start Over');
+  button.position(windowWidth - 90, 30);
+  button.mousePressed(resetSketch);
+  score = 0;
+  lifes = 3;
+}
 function setup() {
       // createCanvas the fills window
-      createCanvas(windowWidth, windowHeight);
-      window.alert("Use Right and Left Arrow keys to move paddle")
-}
+      createCanvas(windowWidth, windowHeight - 70);
+      resetSketch();
 
+}
 function draw() {
-      background(0);
+      background('rgb(120, 110, 119)');
+
+      // Draw ball
+      fill(31, 173, 215);
+      noStroke();
+      ellipse(xBall, yBall, diameter, diameter);
 
       // Ball bounces off walls
     	xBall += xBallChange;
@@ -23,10 +38,13 @@ function draw() {
     		xBallChange *= -1;
       }
     	if (yBall < diameter/2 ||
-          yBall > windowHeight - diameter) {
+          yBall > windowHeight - 80) {
         yBallChange *= -1;
+        lifes = lifes -1;
     	}
-
+      if (lifes < 0){
+        resetSketch();
+      }
       // Check for collision with paddle
       if ((xBall > xPaddle &&
           xBall < xPaddle + paddleWidth) &&
@@ -36,22 +54,33 @@ function draw() {
         score++;
         pongSound.play();
       }
-      // Draw ball
-    	fill(255, 0, 255);
-    	noStroke();
-    	ellipse(xBall, yBall, diameter, diameter);
+      // Check for collision with AI paddle
+      if ((xBall < xPaddle2 &&
+          xBall > xPaddle2 + paddleWidth2) &&
+          (yBall - (diameter/2) <= yPaddle2)) {
+        xBallChange *= -1;
+        yBallChange *= -1;
+        pongSound.play();
+      }
 
       // Update the paddle location on screen
       if (!started) {
         xPaddle = windowWidth / 2;
-        yPaddle = windowHeight - 100;
+        yPaddle = windowHeight - 90;
         started = true;
       }
-
       // Draw paddle
-      fill('green');
+      fill('blue');
       noStroke();
       rect(xPaddle, yPaddle, paddleWidth, paddleHeight);
+      //Draw paddle2 (AI Paddle)
+      fill('green');
+      noStroke();
+      rect(xBall, 0 ,paddleWidth2,paddleHeight2)
+      //Draw live counter
+      fill(0,255, 255);
+      textSize(35);
+      text("Lives: " + lifes, windowWidth - 140 ,30)
 
       // Draw score
       fill(0, 255, 255);
