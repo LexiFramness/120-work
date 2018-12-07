@@ -1,18 +1,9 @@
 //Alexis Framness
 // Final Project
-//sound Variable
-var soundFile;
-
-//preload sound to ensure playing with game
-function preload() {
-    soundFormats('ogg', 'mp3',);
-    soundFile = loadSound('./assests/beep.mp3');
-  }
 
 function setup() {
       // createCanvas the fills window
       createCanvas(windowWidth, windowHeight);
-      soundFile.setVolume(0.5);
     }
 
     function draw() {
@@ -37,7 +28,6 @@ function setup() {
         xBallChange *= -1;
         yBallChange *= -1;
         score++;
-        soundFile.play();
       }
 
       // Draw ball
