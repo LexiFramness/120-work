@@ -30,29 +30,30 @@ function draw() {
       this.Ball()
       this.Paddle()
       this.Paddle2()
+      this.drawScore()
+      this.drawLives()
 
-      // Ball bounces off walls
-    	xBall += xBallChange;
-    	yBall += yBallChange;
-    	if (xBall < diameter/2 ||
-          xBall > windowWidth - 0.5*diameter) {
-    		xBallChange *= -1;
-      }
-    	if (yBall < diameter/2 ||
-          yBall > windowHeight - 80) {
-        yBallChange *= -1;
-        lifes = lifes -1;
-      }
-      if (yBall <= 20){
-        lifes = lifes +1;
-        aipongSound.play();
-      }
+        xBall += xBallChange;
+        yBall += yBallChange;
+        if (xBall < diameter/2 ||
+            xBall > windowWidth - 0.5*diameter) {
+          xBallChange *= -1;
+        }
+        if (yBall < diameter/2 ||
+            yBall > windowHeight - 80) {
+          yBallChange *= -1;
+          lifes = lifes -1;
+        }
+        if (yBall <= 20){
+          lifes = lifes +1;
+          aipongSound.play();
+        }
 
-      if (lifes <= 0){
-        window.alert('GAME OVER, Better luck next time');
-        resetSketch();
+        if (lifes <= 0){
+          window.alert('GAME OVER, Better luck next time');
+          resetSketch();
 
-      }
+        }
       // Check for collision with paddle
       if ((xBall > xPaddle &&
           xBall < xPaddle + paddleWidth) &&
@@ -78,15 +79,6 @@ function draw() {
         yPaddle2 = windowHeight - 648;
         started = true;
       }
-      //Draw live counter
-      fill(0,255, 255);
-      textSize(35);
-      text("Lives: " + lifes, windowWidth - 140 ,30)
-
-      // Draw score
-      fill(0, 255, 255);
-      textSize(35);
-    	text("Score: " + score, 20, 30);
     }
       // controls movement of the paddle across the screen
     function keyPressed() {
