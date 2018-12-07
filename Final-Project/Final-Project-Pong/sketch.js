@@ -1,7 +1,6 @@
 //Alexis Framness
 // Final Project
 var pongSound
-var button
 // pre load sound for game
 function preload(){
     pongSound = loadSound("assets/sound/beep.mp3");
@@ -11,11 +10,8 @@ function setup() {
       // createCanvas the fills window
       createCanvas(windowWidth, windowHeight);
       resetSketch();
-    }
-function resetSketch(){
-  window.alert("Use Right and Left Arrow keys to move paddle")
-  var button = createButton("reset");
-  button.mousePressed(resetSketch);
+      window.alert("Use Right and Left Arrow keys to move paddle")
+
 }
 
 function draw() {
