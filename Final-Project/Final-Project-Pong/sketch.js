@@ -31,7 +31,7 @@ function setup() {
       }
 
       // Draw ball
-    	fill(255, 0, 255);
+    	fill('limegreen';
     	noStroke();
     	ellipse(xBall, yBall, diameter, diameter);
 
