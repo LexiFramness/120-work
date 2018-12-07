@@ -29,13 +29,12 @@ function setup() {
         yBallChange *= -1;
         score++;
       }
-
       // Draw ball
-    	fill('limegreen';
+    	fill(255, 0, 255);
     	noStroke();
     	ellipse(xBall, yBall, diameter, diameter);
 
-      // Update paddle location
+      // Update the paddle location on screen
       if (!started) {
         xPaddle = windowWidth / 2;
         yPaddle = windowHeight - 100;
@@ -49,10 +48,10 @@ function setup() {
 
       // Draw score
       fill(0, 255, 255);
-      textSize(24);
+      textSize(35);
     	text("Score: " + score, 10, 25);
     }
-
+      // controls movement of the paddle across the screen
     function keyPressed() {
       if (keyCode === LEFT_ARROW) {
         xPaddle -= 50;
