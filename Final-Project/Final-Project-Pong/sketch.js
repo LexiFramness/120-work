@@ -9,10 +9,11 @@ function preload(){
 function setup() {
       // createCanvas the fills window
       createCanvas(windowWidth, windowHeight);
-      window.alert("Use Right and Left Arrow keys to move paddle")
+      resetSketch();
     }
+}
 
-    function draw() {
+function draw() {
       background(0);
 
       // Ball bounces off walls
