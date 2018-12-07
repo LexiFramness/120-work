@@ -11,7 +11,6 @@ function setup() {
       createCanvas(windowWidth, windowHeight);
       resetSketch();
       window.alert("Use Right and Left Arrow keys to move paddle")
-
 }
 
 function draw() {
