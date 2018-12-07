@@ -1,5 +1,10 @@
 //Alexis Framness
 // Final Project
+var pongSound
+
+function preload(){
+    pongSound = loadSound("assets/sound/beep.mp3");
+}
 
 function setup() {
       // createCanvas the fills window
@@ -21,13 +26,14 @@ function setup() {
         yBallChange *= -1;
     	}
 
-      // Check for collision with paddle & play sound
+      // Check for collision with paddle
       if ((xBall > xPaddle &&
           xBall < xPaddle + paddleWidth) &&
           (yBall + (diameter/2) >= yPaddle)) {
         xBallChange *= -1;
         yBallChange *= -1;
         score++;
+        pongSound.play();
       }
       // Draw ball
     	fill(255, 0, 255);
